@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Admin Dashboard</title>
+<link rel="stylesheet" href="css/style.css"></head>
+<body>
+<nav class="nav"><div class="brand">Sunrise <span>School</span></div><div class="nav-links"><a href="index.html">Visit Site</a></div></nav>
+<main class="container admin-layout">
+  <aside class="sidebar">
+    <ul>
+      <li><a href="#dashboard" class="tablink" data-tab="dashboard">Dashboard</a></li>
+      <li><a href="#students" class="tablink" data-tab="students">Students</a></li>
+      <li><a href="#results" class="tablink" data-tab="results">Results</a></li>
+      <li><a href="#payments" class="tablink" data-tab="payments">Payments</a></li>
+      <li><a href="#staff" class="tablink" data-tab="staff">Staff</a></li>
+      <li><a href="#settings" class="tablink" data-tab="settings">Settings</a></li>
+    </ul>
+  </aside>
+  <section class="main-area">
+    <div id="dashboard" class="tab"> <h2>Welcome, Admin</h2><p>Overview & quick stats.</p></div>
+    <div id="students" class="tab hidden"> <h2>Students</h2><button class="btn" id="loadStudents">Load Students</button><div id="studentsList"></div></div>
+    <div id="results" class="tab hidden"> <h2>Results</h2><form id="resultForm"><label>Student ID</label><input id="resStudentId" required /><label>Term</label><input id="resTerm" required /><label>Subject</label><input id="resSubject" required /><label>Score</label><input id="resScore" type="number" required /><button class="btn" type="submit">Save Result</button></form></div>
+    <div id="payments" class="tab hidden"> <h2>Payments</h2><div id="paymentsList"></div></div>
+    <div id="staff" class="tab hidden"> <h2>Staff</h2><button class="btn" id="loadStaff">Load Staff</button><div id="staffList"></div></div>
+    <div id="settings" class="tab hidden"> <h2>Settings</h2><p>Admin settings</p></div>
+  </section>
+</main>
+<script src="js/script.js"></script>
+</body>
+</html>

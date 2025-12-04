@@ -1,0 +1,25 @@
+:root{--primary:#0b5ed7;--muted:#6c757d}
+*{box-sizing:border-box}
+body{font-family:Inter, Arial, sans-serif;margin:0;background:#f4f7fb;color:#212529}
+.nav{display:flex;justify-content:space-between;align-items:center;padding:12px 20px;background:var(--primary);color:#fff}
+.brand{font-weight:700}
+.brand span{color:#ffd166}
+.nav-links a{color:#fff;margin-left:12px;text-decoration:none}
+.hero{background:linear-gradient(90deg, rgba(11,94,215,0.85), rgba(3,169,244,0.6)),url('assets/school.jpg') center/cover;padding:80px 20px;color:#fff;text-align:center}
+.container{max-width:1100px;margin:24px auto;padding:18px;background:#fff;border-radius:8px;box-shadow:0 6px 20px rgba(0,0,0,0.06)}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.card{padding:18px;border-radius:8px;background:#f8fbff}
+.btn{background:var(--primary);color:#fff;padding:10px 14px;border:none;border-radius:6px;cursor:pointer}
+.btn-sm{background:transparent;border:2px solid var(--primary);padding:8px 10px;color:var(--primary);border-radius:6px;text-decoration:none;display:inline-block}
+.auth{max-width:420px;margin:40px auto;padding:24px}
+label{display:block;margin-top:12px;color:var(--muted)}
+input,select,textarea{width:100%;padding:10px;margin-top:6px;border-radius:6px;border:1px solid #e6e9ef}
+.footer{text-align:center;padding:18px;margin-top:18px;color:#6c757d}
+.admin-layout{display:grid;grid-template-columns:240px 1fr;gap:18px}
+.sidebar{background:#fff;padding:12px;border-radius:8px;box-shadow:0 6px 18px rgba(0,0,0,0.04)}
+.sidebar ul{list-style:none;padding:0}
+.sidebar li{margin-bottom:8px}
+.sidebar a{text-decoration:none;color:#0b5ed7}
+.main-area{padding:12px;background:#fff;border-radius:8px;min-height:400px}
+.hidden{display:none}
+@media(max-width:900px){.cards{grid-template-columns:1fr}.admin-layout{grid-template-columns:1fr}}
